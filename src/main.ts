@@ -6,12 +6,9 @@ import store from "@/store";
 
 import App from "./App.vue";
 
-const vue = createApp(App);
-vue.use(router);
-vue.use(store);
-vue.use(vuetify);
+const vue = createApp(App).use(router).use(store).use(vuetify);
 
 router
   .isReady()
   .then(() => vue.mount("#app"))
-  .catch((e) => console.error(e));
+  .catch(console.error);

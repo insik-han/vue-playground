@@ -22,12 +22,9 @@
       ]
     },
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "types": [
-      "node",
-      "vuetify"
-    ],
     "useDefineForClassFields": true
   },
   "include": [
